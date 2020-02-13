@@ -1,0 +1,5 @@
+sourceControl {
+  gitRepository("https://github.com/chuckb/raspbootin.git") {
+    producesModule("com.github.chuckb.raspbootin:raspbootcom")
+  }
+}

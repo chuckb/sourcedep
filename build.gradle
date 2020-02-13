@@ -1,0 +1,16 @@
+configurations {
+  deployment
+}
+
+dependencies {
+  deployment("com.github.chuckb.raspbootin:raspbootcom") {
+    targetConfiguration "executable"
+    version {
+      branch = "master"
+    }
+  }
+}
+
+task run(type: Exec) {
+  commandLine configurations.deployment.getSingleFile()
+}
